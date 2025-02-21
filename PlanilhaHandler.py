@@ -8,7 +8,7 @@ class PlanilhaHandler:
     def ler_planilha(self) -> list:
         """Lê a planilha e armazena o DataFrame com tratamento de exceções."""
         try:
-            self.dados_df = pd.read_excel(self.caminho_arquivo, header=1)
+            self.dados_df = pd.read_excel(self.caminho_arquivo, header=0)
             print("Planilha carregada com sucesso.")
             return self.converter_para_dicionario_records()
         except FileNotFoundError:
