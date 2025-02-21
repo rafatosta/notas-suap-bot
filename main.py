@@ -14,8 +14,8 @@ dados = handler.ler_planilha()
 
 #handler.imprimir_tabulado_records()
 
-codigo_turma = "226393"
-unidade = "2"
+codigo_turma = ""
+unidade = ""
 
 suap.access_registration_notes(codigo_turma, unidade)
 for i, aluno in enumerate(dados, 1):

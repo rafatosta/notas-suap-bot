@@ -39,9 +39,18 @@ password=sua senha
 
 Esse arquivo será utilizado para armazenar informações sensíveis de forma segura.
 
+# Seleção da turma e unidade
+
+No arquivo `main.py`, coloque o código da turma e a unidade desejada.
+
+```
+codigo_turma = ""
+unidade = ""
+```
+
 ## Automação do Preenchimento de Notas no SUAP
 
-Este projeto inclui um bot para automatizar o preenchimento das notas no sistema SUAP. As notas devem estar no formato de tabela do Excel com a seguinte estrutura:
+As notas devem estar no formato de tabela do Excel com a seguinte estrutura:
 
 | Nome      | Nota 1 | Nota 2 | Nota 3 |
 |-----------|--------|--------|--------|
