@@ -12,7 +12,7 @@ caminho = 'notas.xlsx'
 handler = PlanilhaHandler(caminho)
 dados = handler.ler_planilha()
 
-handler.imprimir_tabulado_records()
+#handler.imprimir_tabulado_records()
 
 codigo_turma = "226393"
 unidade = "2"
@@ -34,11 +34,7 @@ for i, aluno in enumerate(dados, 1):
         aluno_tr = aluno_td.find_element(By.XPATH, "./ancestor::tr")
         inputs = aluno_tr.find_elements(By.XPATH, ".//input[@type='text']")
 
-        # Limpar os campos antes de preencher
-        """ for input_field in inputs:
-            input_field.clear() """
-
-        # Preencher os campos com as novas notas
+        # Limpar e preencher os campos com as novas notas
         inputs[0].clear()
         inputs[0].send_keys(str(nota1))
         inputs[1].clear()
