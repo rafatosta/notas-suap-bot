@@ -63,6 +63,21 @@ As notas devem estar no formato de tabela do Excel com a seguinte estrutura:
 
 O bot utilizará as bibliotecas instaladas para processar e enviar esses dados automaticamente para o sistema.
 
+## Execução
+
+Execute o seguinte comando no terminal:
+
+```sh
+python main.py
+```
+
+Caso o comando acima não funcione, tente:
+
+```sh
+python3 main.py
+```
+
+
 ## Referências
 - [Documentação do Selenium](https://www.selenium.dev/documentation/)
 - [Documentação do Pandas](https://pandas.pydata.org/docs/)
